@@ -67,9 +67,9 @@ class GulpRevVersionStrategy implements VersionStrategyInterface
         }
 
         // If a file exists, it doesn't have a version so we ignore it
-        if (!file_exists($this->kernelRootDir.'/../web/'.$path)) {
-            throw new Exception(sprintf('The file "%s" does not exist and there is no version file for it', $path));
-        }
+        // if (!file_exists($this->kernelRootDir.'/../web/'.$path)) {
+        //    throw new Exception(sprintf('The file "%s" does not exist and there is no version file for it', $path));
+        // }
 
         return $path;
     }
